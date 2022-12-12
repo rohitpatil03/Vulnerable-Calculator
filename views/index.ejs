@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body bgcolor="cyan">
+    <center>
+        <div class="center">
+            
+                <b><p style="font-size: 50px;">Vulnerable Calculator</p></b>
+            
+        </div>
+        <br>
+        <br>
+        <div class="center">
+            
+                <form action="/" method="POST">
+                    <input id="equation" type="text" name="equation" required placeholder="Enter a Equation to solve" value= "<%= data[0] %>" >
+                    <input id="button" type="submit"></input>
+                </form>
+            
+        </div>
+        <br>
+
+        <div class="center">
+
+            <% if(data==undefined){ %>
+
+            <% } else{ %>
+                <h1>Answer : <%= data[1] %></h1>
+            <% } %>
+            
+        </div>
+    </center>
+</body>
+</html>

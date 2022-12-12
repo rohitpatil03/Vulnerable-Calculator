@@ -1,0 +1,33 @@
+
+
+.center {
+    
+    margin-top: 50px;
+}
+
+input {
+    height: 50px;
+    width:100px;
+    font-size: 25px;
+}
+
+#equation {
+    height: 50px;
+    width: 500px;
+}
+
+@media screen and (max-width: 600px) {
+    #equation {
+        height: 50px;
+        width: 275px;
+    }
+    .center {
+        margin-top: 50px;
+    }
+    input[type="submit"] {
+        height: 50px;
+        width: 100px;
+        font-size: 25px;
+        margin-top: 25px;
+    }
+}
